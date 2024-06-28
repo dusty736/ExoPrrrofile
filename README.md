@@ -46,7 +46,35 @@ Run the script to download light curves:
 python scripts/download_data.py
 ```
 
-## Acknowledgments
+## Environment Setup
+
+### Prerequisites
+
+- Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Anaconda](https://www.anaconda.com/products/individual).
+
+### Setting Up the Environment
+
+1. Clone this repository:
+    ```sh
+    git clone https://github.com/yourusername/exoplanet-pipeline.git
+    cd exoplanet-pipeline
+    ```
+
+2. Create the conda environment using the `environment.yml` file:
+    ```sh
+    conda env create -f environment.yml
+    ```
+
+3. Activate the environment:
+    ```sh
+    conda activate astro-env
+    ```
+
+4. Ensure `reticulate` uses the correct Python environment in your R scripts:
+    ```r
+    library(reticulate)
+    use_condaenv("astro-env", required = TRUE)
+    ```
 
 ## Acknowledgments
 
