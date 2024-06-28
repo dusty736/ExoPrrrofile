@@ -1,0 +1,19 @@
+name: astro-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - r-base=4.1.2
+  - pandas
+  - lightkurve
+  - matplotlib
+  - requests
+  - r-ggplot2
+  - r-rmarkdown
+  - r-reticulate
+  - r-httr
+  - r-jsonlite
+  - pip
+  - pip:
+    - git+https://github.com/natashabatalha/pandexo.engine.git
+
